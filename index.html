@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقي الخاص</title>
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered successfully:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwbr79OseHhEYw4UdXdUzCylKQOL341lQ-h9JRTnSveCk_s2Rj2F6V_Q52jjRekbY0d/exec">
+</head>
+<body>
+    <p>جاري تحميل تطبيقك...</p>
+    <p>إذا لم يتم التحميل تلقائيًا، الرجاء النقر هنا: <a href="https://script.google.com/macros/s/AKfycbwbr79OseHhEYw4UdXdUzCylKQOL341lQ-h9JRTnSveCk_s2Rj2F6V_Q52jjRekbY0d/exec">رابط التطبيق</a></p>
+</body>
+</html>
